@@ -1,23 +1,5 @@
-## Usage
+## pyodide-datasmart-backend
 
-You can run the Worker defined by your new project by executing `wrangler dev` in this
-directory. This will start up an HTTP server and will allow you to iterate on your
-Worker without having to restart `wrangler`.
+## Licensing
 
-### Types and autocomplete
-
-This project also includes a pyproject.toml with some requirements which
-set up autocomplete and type hints for this Python Workers project.
-
-To get these installed you'll need `uv`, which you can install by following
-https://docs.astral.sh/uv/getting-started/installation/.
-
-Once `uv` is installed, you can run the following:
-
-```
-uv venv
-uv sync
-```
-
-Then point your editor's Python plugin at the `.venv` directory. You should then have working
-autocomplete and type information in your editor.
+This repository bundles BitBake (GPL-2.0); see the full BitBake license text at https://github.com/openembedded/bitbake/blob/720df1a53452983c1c832f624490e255cf389204/LICENSE, which also documents bundled third-party files and their respective licenses.
