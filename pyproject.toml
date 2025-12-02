@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
+license = {file = "LICENSE"}
 dependencies = [
+    "ply>=3.11",
     "webtypy>=0.1.7",
 ]
 
