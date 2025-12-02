@@ -9,10 +9,10 @@ from workers import Response, WorkerEntrypoint
 import zipimport
 
 _BITBAKE_ZIP_FILE = Path(__file__).resolve().parent / "bundled" / "yocto-5.2.4.zip"
-imp = zipimport.zipimporter(str(_BITBAKE_ZIP_FILE / "bitbake-yocto-5.2.4" / "lib"))
+zip_loader = zipimport.zipimporter(str(_BITBAKE_ZIP_FILE / "bitbake-yocto-5.2.4" / "lib"))
 
-imp.load_module("bs4")
-bb = imp.load_module("bb")
+zip_loader.load_module("bs4")
+bb = zip_loader.load_module("bb")
 
 import bb.data_smart
 from bb.data_smart import DataSmart
