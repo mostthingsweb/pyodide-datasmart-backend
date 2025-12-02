@@ -18,7 +18,8 @@
 			"type": "Data",
 			"globs": [
 				"bundled/*.zip"
-			]
+			],
+			"fallthrough": true,
 		}
 	],
 	/**

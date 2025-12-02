@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = {file = "LICENSE"}
 dependencies = [
+    "beautifulsoup4>=4.12.3",
     "ply>=3.11",
     "webtypy>=0.1.7",
 ]
